@@ -18,9 +18,7 @@ require_once 'components/connectEtudiants.php';
         shuffle($dataProjets);
         $previousConfig = '';
         $length = count($dataProjets);
-
-        echo generateCard($dataProjets[0], "col-span-2");
-        $previousConfig = '2-1';
+        
         
         echo "<div class='relative shadow-md overflow-hidden h-96 col-span-1 rounded-2xl bg-white'>
             <div class='absolute bottom-0 left-0 p-6 pt-16 w-full'>
@@ -29,6 +27,9 @@ require_once 'components/connectEtudiants.php';
                 <p class='text-black'>Touche un projet et je te dirais tout ce que je sais sur lui.</p>
             </div>
         </div>";
+
+        echo generateCard($dataProjets[0], "col-span-2");
+        $previousConfig = '1-2';
 
         
 
