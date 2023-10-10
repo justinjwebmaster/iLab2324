@@ -97,7 +97,7 @@ require_once 'components/connectEtudiants.php';
             
             $nom = getNomById($element['option']);
             
-            return "<a href='projet.php?" . $element['id'] . "' class='relative shadow-md overflow-hidden h-96 $spanClass rounded-2xl'>
+            return "<a href='projet.php?id=" . $element['id'] . "' class='relative shadow-md overflow-hidden h-96 $spanClass rounded-2xl'>
                     <img src='assets/datas/fr/img/{$element['img1']}' alt='{$element['nom']}' class='w-full h-full object-cover'>
                     <div class='absolute bottom-0 left-0 p-6 pt-16 bg-gradient-to-t from-black to-transparent w-full'>
                         <h2 class='text-2xl font-bold text-white mb-2'><span class='uppercase'>{$element['nom']}</span></h2>
