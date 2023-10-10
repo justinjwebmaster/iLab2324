@@ -84,7 +84,8 @@ require_once 'components/connectEtudiants.php';
             }
         }
 
-        function getNomById($id) {
+        function getNomById($id)
+        {
             global $dataOptions; // TODO: demander au prof si on peut faire ca
             foreach ($dataOptions as $option) {
                 if ($id == $option['id']) {
@@ -101,7 +102,7 @@ require_once 'components/connectEtudiants.php';
                     <img src='assets/datas/fr/img/{$element['img1']}' alt='{$element['nom']}' class='w-full h-full object-cover'>
                     <div class='absolute bottom-0 left-0 p-6 pt-16 bg-gradient-to-t from-black to-transparent w-full'>
                         <h2 class='text-2xl font-bold text-white mb-2'><span class='uppercase'>{$element['nom']}</span></h2>
-                        <p class='text-white'><span class='uppercase'>{$nom}</span></p>
+                        <p class='text-white'><span class='uppercase'>{$element['etudiants']}</span></p>
                     </div>
                 </a>";
         }
